@@ -36,4 +36,10 @@ public class UserController {
             return "user/add";
         }
     }
+    @GetMapping("user/{userId}")
+    public String displayUserInfo(Model model, @PathVariable int userId) {
+        User user = UserData.getById(userId);
+        model.addAttribute("user", user);
+        return "user/info";
+    }
 }
