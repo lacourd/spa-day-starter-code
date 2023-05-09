@@ -24,3 +24,7 @@ table {
             padding: 10px;
             text-align: center;
 }
+.error {
+    color: rgb(128,0,32);
+    font-weight: bold;
+}
